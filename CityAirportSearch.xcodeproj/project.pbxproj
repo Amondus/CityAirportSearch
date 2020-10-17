@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F4FEFCC253B720700B7B77F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7F4FEFCB253B720700B7B77F /* Alamofire */; };
 		7FE6AB0D24FB65F9001620D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB0C24FB65F9001620D3 /* AppDelegate.swift */; };
 		7FE6AB0F24FB65F9001620D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB0E24FB65F9001620D3 /* SceneDelegate.swift */; };
-		7FE6AB1124FB65F9001620D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB1024FB65F9001620D3 /* ViewController.swift */; };
+		7FE6AB1124FB65F9001620D3 /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB1024FB65F9001620D3 /* SearchCityViewController.swift */; };
 		7FE6AB1424FB65FA001620D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE6AB1224FB65FA001620D3 /* Main.storyboard */; };
 		7FE6AB1624FB65FC001620D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE6AB1524FB65FC001620D3 /* Assets.xcassets */; };
 		7FE6AB1924FB65FC001620D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE6AB1724FB65FC001620D3 /* LaunchScreen.storyboard */; };
+		7FE6AB2224FB6674001620D3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE6AB2124FB6674001620D3 /* RxRelay */; };
+		7FE6AB2424FB6674001620D3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE6AB2324FB6674001620D3 /* RxSwift */; };
+		7FE6AB2624FB6674001620D3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE6AB2524FB6674001620D3 /* RxCocoa */; };
+		7FE6AB2B24FB6AD7001620D3 /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB2A24FB6AD7001620D3 /* SearchCityViewModel.swift */; };
+		7FE6AB2E24FB6BF3001620D3 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE6AB2D24FB6BF3001620D3 /* Differentiator */; };
+		7FE6AB3024FB6BF3001620D3 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 7FE6AB2F24FB6BF3001620D3 /* RxDataSources */; };
+		7FE6AB3524FB707B001620D3 /* SearchCityCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB3424FB707B001620D3 /* SearchCityCoordinator.swift */; };
+		7FE6AB3724FB70BB001620D3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB3624FB70BB001620D3 /* Coordinator.swift */; };
+		7FE6AB3924FB7285001620D3 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB3824FB7285001620D3 /* BaseCoordinator.swift */; };
+		7FE6AB3C24FB736C001620D3 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB3B24FB736C001620D3 /* Storyboardable.swift */; };
+		7FE6AB3E24FB789F001620D3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6AB3D24FB789F001620D3 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7FE6AB0924FB65F9001620D3 /* CityAirportSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityAirportSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE6AB0C24FB65F9001620D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FE6AB0E24FB65F9001620D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7FE6AB1024FB65F9001620D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FE6AB1024FB65F9001620D3 /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
 		7FE6AB1324FB65FA001620D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FE6AB1524FB65FC001620D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FE6AB1824FB65FC001620D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FE6AB1A24FB65FC001620D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FE6AB2A24FB6AD7001620D3 /* SearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewModel.swift; sourceTree = "<group>"; };
+		7FE6AB3424FB707B001620D3 /* SearchCityCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityCoordinator.swift; sourceTree = "<group>"; };
+		7FE6AB3624FB70BB001620D3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7FE6AB3824FB7285001620D3 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		7FE6AB3B24FB736C001620D3 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		7FE6AB3D24FB789F001620D3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE6AB2E24FB6BF3001620D3 /* Differentiator in Frameworks */,
+				7FE6AB2624FB6674001620D3 /* RxCocoa in Frameworks */,
+				7FE6AB2424FB6674001620D3 /* RxSwift in Frameworks */,
+				7F4FEFCC253B720700B7B77F /* Alamofire in Frameworks */,
+				7FE6AB3024FB6BF3001620D3 /* RxDataSources in Frameworks */,
+				7FE6AB2224FB6674001620D3 /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +80,53 @@
 		7FE6AB0B24FB65F9001620D3 /* CityAirportSearch */ = {
 			isa = PBXGroup;
 			children = (
+				7FE6AB3A24FB7325001620D3 /* Shared */,
+				7FE6AB3324FB7067001620D3 /* Coordinator */,
+				7FE6AB2824FB6A0B001620D3 /* ViewModel */,
+				7FE6AB2724FB69FE001620D3 /* View */,
 				7FE6AB0C24FB65F9001620D3 /* AppDelegate.swift */,
 				7FE6AB0E24FB65F9001620D3 /* SceneDelegate.swift */,
-				7FE6AB1024FB65F9001620D3 /* ViewController.swift */,
 				7FE6AB1224FB65FA001620D3 /* Main.storyboard */,
 				7FE6AB1524FB65FC001620D3 /* Assets.xcassets */,
 				7FE6AB1724FB65FC001620D3 /* LaunchScreen.storyboard */,
 				7FE6AB1A24FB65FC001620D3 /* Info.plist */,
 			);
 			path = CityAirportSearch;
+			sourceTree = "<group>";
+		};
+		7FE6AB2724FB69FE001620D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FE6AB1024FB65F9001620D3 /* SearchCityViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FE6AB2824FB6A0B001620D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FE6AB2A24FB6AD7001620D3 /* SearchCityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7FE6AB3324FB7067001620D3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7FE6AB3624FB70BB001620D3 /* Coordinator.swift */,
+				7FE6AB3824FB7285001620D3 /* BaseCoordinator.swift */,
+				7FE6AB3D24FB789F001620D3 /* AppCoordinator.swift */,
+				7FE6AB3424FB707B001620D3 /* SearchCityCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7FE6AB3A24FB7325001620D3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7FE6AB3B24FB736C001620D3 /* Storyboardable.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +145,14 @@
 			dependencies = (
 			);
 			name = CityAirportSearch;
+			packageProductDependencies = (
+				7FE6AB2124FB6674001620D3 /* RxRelay */,
+				7FE6AB2324FB6674001620D3 /* RxSwift */,
+				7FE6AB2524FB6674001620D3 /* RxCocoa */,
+				7FE6AB2D24FB6BF3001620D3 /* Differentiator */,
+				7FE6AB2F24FB6BF3001620D3 /* RxDataSources */,
+				7F4FEFCB253B720700B7B77F /* Alamofire */,
+			);
 			productName = CityAirportSearch;
 			productReference = 7FE6AB0924FB65F9001620D3 /* CityAirportSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -94,7 +164,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Anton Zakharchenko";
 				TargetAttributes = {
 					7FE6AB0824FB65F9001620D3 = {
@@ -111,6 +181,11 @@
 				Base,
 			);
 			mainGroup = 7FE6AB0024FB65F9001620D3;
+			packageReferences = (
+				7FE6AB2024FB6674001620D3 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				7FE6AB2C24FB6BF3001620D3 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				7F4FEFCA253B720700B7B77F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7FE6AB0A24FB65F9001620D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +213,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE6AB1124FB65F9001620D3 /* ViewController.swift in Sources */,
+				7FE6AB1124FB65F9001620D3 /* SearchCityViewController.swift in Sources */,
 				7FE6AB0D24FB65F9001620D3 /* AppDelegate.swift in Sources */,
+				7FE6AB3724FB70BB001620D3 /* Coordinator.swift in Sources */,
+				7FE6AB3524FB707B001620D3 /* SearchCityCoordinator.swift in Sources */,
+				7FE6AB3C24FB736C001620D3 /* Storyboardable.swift in Sources */,
+				7FE6AB3924FB7285001620D3 /* BaseCoordinator.swift in Sources */,
+				7FE6AB3E24FB789F001620D3 /* AppCoordinator.swift in Sources */,
 				7FE6AB0F24FB65F9001620D3 /* SceneDelegate.swift in Sources */,
+				7FE6AB2B24FB6AD7001620D3 /* SearchCityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +273,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -216,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,6 +334,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PT94VR8DZT;
 				INFOPLIST_FILE = CityAirportSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PT94VR8DZT;
 				INFOPLIST_FILE = CityAirportSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +423,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F4FEFCA253B720700B7B77F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+		7FE6AB2024FB6674001620D3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		7FE6AB2C24FB6BF3001620D3 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F4FEFCB253B720700B7B77F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F4FEFCA253B720700B7B77F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7FE6AB2124FB6674001620D3 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FE6AB2024FB6674001620D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		7FE6AB2324FB6674001620D3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FE6AB2024FB6674001620D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		7FE6AB2524FB6674001620D3 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FE6AB2024FB6674001620D3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		7FE6AB2D24FB6BF3001620D3 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FE6AB2C24FB6BF3001620D3 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		7FE6AB2F24FB6BF3001620D3 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7FE6AB2C24FB6BF3001620D3 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7FE6AB0124FB65F9001620D3 /* Project object */;
 }

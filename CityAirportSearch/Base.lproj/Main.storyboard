@@ -1,24 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search City View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchCityViewController" id="BYZ-38-t0r" customClass="SearchCityViewController" customModule="CityAirportSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gng-go-ram">
+                                <rect key="frame" x="0.0" y="44" width="414" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mny-xV-Mau">
+                                        <rect key="frame" x="15" y="30" width="384" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.21568627450980393" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Mny-xV-Mau" firstAttribute="leading" secondItem="Gng-go-ram" secondAttribute="leading" constant="15" id="BU9-8e-TmN"/>
+                                    <constraint firstAttribute="height" constant="120" id="D8N-uE-LT9"/>
+                                    <constraint firstItem="Mny-xV-Mau" firstAttribute="top" secondItem="Gng-go-ram" secondAttribute="top" constant="30" id="INi-X6-Cug"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mny-xV-Mau" secondAttribute="bottom" constant="30" id="mee-Ei-f6N"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mny-xV-Mau" secondAttribute="trailing" constant="15" id="rcX-xR-g6N"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pAU-Fi-Gg8">
+                                <rect key="frame" x="0.0" y="164" width="414" height="732"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pAU-Fi-Gg8" firstAttribute="top" secondItem="Gng-go-ram" secondAttribute="bottom" id="CKg-NG-sqD"/>
+                            <constraint firstItem="Gng-go-ram" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dls-6R-Cey"/>
+                            <constraint firstItem="pAU-Fi-Gg8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c1f-Cl-UDh"/>
+                            <constraint firstItem="pAU-Fi-Gg8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="k7z-XU-yBe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gng-go-ram" secondAttribute="trailing" id="lid-ll-8v6"/>
+                            <constraint firstAttribute="bottom" secondItem="pAU-Fi-Gg8" secondAttribute="bottom" id="mg2-HT-Ip5"/>
+                            <constraint firstItem="Gng-go-ram" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yl2-OH-hs6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="roundedView" destination="Gng-go-ram" id="SKk-6I-za4"/>
+                        <outlet property="searchTextField" destination="Mny-xV-Mau" id="hxt-i6-AZb"/>
+                        <outlet property="tableView" destination="pAU-Fi-Gg8" id="7ws-gh-1Us"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
         </scene>
     </scenes>
 </document>
